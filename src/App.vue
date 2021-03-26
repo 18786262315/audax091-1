@@ -1,10 +1,12 @@
 <template>
   <div id="app">
-    <div id="nav">
+    <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    </div>-->
+    <navigation>
+      <router-view />
+    </navigation>
   </div>
 </template>
 
@@ -15,6 +17,10 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  width: 100%;
+  height: 100%;
+  /* font-family: Regular;  */
+  
 }
 
 #nav {
@@ -29,4 +35,20 @@
 #nav a.router-link-exact-active {
   color: #42b983;
 }
+html,body{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  
+}
+
+@font-face {
+    font-family: din-bold; 
+    src: url('~@/assets/font/Poppins-BoldItalic.ttf');
+  }
+@font-face {
+    font-family: Regular; 
+    src: url('~@/assets/font/Poppins-Regular.ttf');
+  }
 </style>

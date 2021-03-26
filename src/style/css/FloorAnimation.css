@@ -1,0 +1,35 @@
+
+
+.animation {
+  /* font-family: din-bold; */
+  position: absolute;
+  /* width: 100%;
+  height: 100%; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  border:2px solid;
+  
+  /* background-color: rgba(248, 248, 255, 0.5); */
+  animation: glow 1000ms ease-out infinite alternate;
+}
+
+@keyframes glow {
+0% {
+    /* box-shadow: 0px 0px 0px #FAFAFA; */
+    opacity:0.2;
+    /* border:0px solid; */
+    border-color: white;
+
+}
+100% {
+    /* background-color: rgba(248, 248, 255, 0.5); */
+    opacity:0.9;
+    /* border:2px solid; */
+    border-color: white;
+    /* box-shadow: 0px 0px 10px rgb(240, 155, 58); */
+   
+}
+}
+
